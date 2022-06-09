@@ -11,7 +11,7 @@ public class AddTest {
     }
 
     @Test
-    void add(){
+    void addOutOfRange(){
         int result = 0;
         try {
             result = calculator.add("2147483647", "20");
@@ -22,7 +22,7 @@ public class AddTest {
 
     }
     @Test
-    void addOutOfRange(){
+    void add(){
         int result = 0;
         try {
             result = calculator.add("40", "20");
